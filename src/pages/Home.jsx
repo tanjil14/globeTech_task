@@ -7,7 +7,7 @@ const Home = () => {
       <Navbar />
       <div className="top flex justify-between mt-24 container mx-auto space-x-10 w-full md:w-9/12 gap-6">
         <div className="left w-1/2">
-          <div className="plane mb-14">
+          <div className="plane mb-14 left-0 duration-300 ease-in-out hover:translate-x-3/4">
             <img className="w-24 h-16" src={plane} alt="" />
           </div>
           <h1 className="text-6xl font-bold text-blue1 mb-6">Welcome to </h1>
@@ -20,12 +20,12 @@ const Home = () => {
               offer a broad range and depth of technology.
             </p>
             <div className="detail-button mt-4 space-x-8">
-              <button className="border-2 border-btnBlueText rounded-sm font-semibold text-lg text-btnBlueText py-3 px-7 hover:border-none hover:bg-goldBtn hover:text-btnBlackText">Support us</button>
-              <button className="border-2 border-btnBlueText rounded-sm font-semibold text-lg text-btnBlueText py-3 px-7 hover:border-none hover:bg-goldBtn hover:text-btnBlackText">Our Mission</button>
+              <button className="custom-button">Support us</button>
+              <button className="custom-button">Our Mission</button>
             </div>
           </div>
         </div>
-        <div className="right w-1/2">
+        <div className="right w-1/2 duration-300 delay-200 ease-linear hover:rotate-45">
           <img className="w-full h-full" src={atom} alt="" />
         </div>
       </div>

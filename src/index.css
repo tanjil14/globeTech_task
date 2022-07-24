@@ -10,3 +10,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+@layer components {
+  .custom-button {
+    @apply border-2 border-btnBlueText rounded-sm font-semibold text-lg text-btnBlueText py-3 px-7 hover:border-none hover:bg-goldBtn hover:text-btnBlackText;
+  }
+}
