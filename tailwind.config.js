@@ -42,6 +42,10 @@ module.exports = {
       bgBlue: "#000738",
       blue1: "#28ACE2",
       blue2: "#0F7CBF",
+      gold: "#C9E127",
+      goldBtn: "#DAE55D",
+      btnBlackText: "#000526",
+      btnBlueText: "#8ED5CD",
     }),
     columns: {
       auto: "auto",

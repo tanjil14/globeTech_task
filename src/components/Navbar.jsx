@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div className="flex justify-around py-3 bg-bgBlue">
+    <div className="flex justify-between py-3 container mx-auto space-x-10 w-full md:w-9/12 ">
       <div className="left flex flex-col my-2">
         <h1 className="text-2xl">
           <span className="font-bold text-blue1">Globe</span>
@@ -11,7 +11,7 @@ const Navbar = () => {
           Company limited
         </small>
       </div>
-      <div className="right my-5 ">
+      <div className="right my-5">
         <ul className="flex gap-6">
           <Link to="/">
             <li className="text-blue1 font-medium">Home</li>
