@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Service from "../components/Service";
+import { cardData } from "../data";
 import plane from "../images/airplane.png";
 const Services = () => {
   return (
@@ -18,12 +19,9 @@ const Services = () => {
           </h1>
         </div>
         <div className="serviceCart flex flex-col md:flex-row flex-wrap gap-8">
-          <Service title="Software Solution"/>
-          <Service title=""/>
-          <Service title=""/>
-          <Service title=""/>
-          <Service title=""/>
-          <Service title=""/>
+          {cardData.map((i) => (
+            <Service key={i.id} title={i.title} img={i.img} />
+          ))}
         </div>
       </div>
     </div>
