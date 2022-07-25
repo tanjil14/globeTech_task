@@ -3,10 +3,10 @@ import plane from "../images/airplane.png";
 import atom from "../images/atom.png";
 const Home = () => {
   return (
-    <div className="bg-bgBlue h-full mb-10 ">
+    <div className=" h-full mb-10 p-2">
       <Navbar />
       <div className="top flex flex-col lg:flex-row justify-between mt-10 md:mt-24 container mx-auto space-x-10 w-full md:w-9/12 gap-6">
-        <div className="left w-full p-2 lg:w-1/2">
+        <div className="left w-full lg:w-1/2">
           <div className="plane mb-7 md:mb-14 left-0 duration-300 ease-in-out hover:translate-x-3/4">
             <img className="w-24 h-16" src={plane} alt="" />
           </div>
