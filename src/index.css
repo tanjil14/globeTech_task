@@ -11,9 +11,14 @@ body {
   font-family: "Poppins", sans-serif;
   background: #000738;
 }
-
+.active{
+  color: #C9E127;
+}
 @layer components {
   .custom-button {
     @apply border-2 border-btnBlueText rounded-sm font-semibold text-lg text-btnBlueText py-3 px-7 hover:border-none hover:bg-goldBtn hover:text-btnBlackText;
+  }
+  .link {
+    @apply text-blue1 font-medium cursor-pointer hover:text-gold;
   }
 }

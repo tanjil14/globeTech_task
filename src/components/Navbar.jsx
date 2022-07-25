@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="flex flex-col text-center md:text-left md:flex-row md:justify-between py-3 container mx-auto space-x-0 md:space-x-10 w-full md:w-9/12 ">
@@ -13,15 +13,15 @@ const Navbar = () => {
       </div>
       <div className="right my-2 md:my-5">
         <ul className="flex flex-col md:flex-row gap-3 md:gap-6 justify-start">
-          <Link to="/">
-            <li className="text-blue1 font-medium cursor-pointer">Home</li>
-          </Link>
-          <Link to="/services">
-            <li className="text-blue1 font-medium pointer">Services</li>
-          </Link>
-          <Link to="/login">
-            <li className="text-blue1 font-medium pointer">Login</li>
-          </Link>
+          <li className="link">
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li className="link">
+            <NavLink to="/services">Services</NavLink>
+          </li>
+          <li className="link">
+            <NavLink to="/login">Login</NavLink>
+          </li>
         </ul>
       </div>
     </div>
